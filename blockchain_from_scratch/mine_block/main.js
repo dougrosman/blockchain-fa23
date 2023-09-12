@@ -26,7 +26,6 @@ class Block {
 
         while(this.hash.substring(0, difficulty) !== Array(difficulty + 1).join("0")) {
             this.nonce++;
-            // console.log(this.nonce);
             this.hash = this.calculateHash();
             console.log(this.hash)
         }
@@ -71,7 +70,4 @@ let demoCoin = new Blockchain();
 
 console.log("\n$$$$$$$$$$$$$$$$$$$$$ MINING TIME $$$$$$$$$$$$$$$$$$$$$\n")
 
-// console.log("Mining block 1...");
 demoCoin.addBlock(new Block(1, Date.now(), {amount: 1000}));
-
-
