@@ -4,6 +4,7 @@ pragma solidity ^0.8.9;
 contract UncensoredMessages {
     string[] public messages;
 
+    // an event to emit when a message is added
     event MessageAddedEvent(string message);
 
     function addMessage(string memory _message) public {

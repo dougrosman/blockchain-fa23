@@ -45,6 +45,4 @@ async function main() {
             })
         }
     }
-
-
 }

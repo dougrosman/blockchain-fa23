@@ -1,19 +1,6 @@
 let contractAddress = "0xC877bca842154EE369ACe3A77FE3dC98a3bcE511";
 let contractABI = [
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_message",
-				"type": "string"
-			}
-		],
-		"name": "addMessage",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"anonymous": false,
 		"inputs": [
 			{
@@ -25,6 +12,19 @@ let contractABI = [
 		],
 		"name": "MessageAddedEvent",
 		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_message",
+				"type": "string"
+			}
+		],
+		"name": "addMessage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
 	},
 	{
 		"inputs": [],
@@ -58,4 +58,4 @@ let contractABI = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-];
+]
