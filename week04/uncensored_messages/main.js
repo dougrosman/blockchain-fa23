@@ -36,7 +36,7 @@ async function main() {
 
     async function displayMessages() {
         let allMessages = await contract.getAllMessages();
-
+        console.log(allMessages);
         if (allMessages.length > 0) {
 
             allMessages.forEach(message => {
