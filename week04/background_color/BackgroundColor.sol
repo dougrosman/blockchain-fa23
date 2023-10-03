@@ -30,11 +30,4 @@ contract BackgroundColor {
     function getBlue() public view returns (uint8) {
         return blue;
     }
-
-    // you can return multiple values from a single method, but we're
-    // not going to use this right now
-    // function getColor() public view returns (uint8, uint8, uint8) {
-    //     return (red, green, blue);
-    // }
-
 }
