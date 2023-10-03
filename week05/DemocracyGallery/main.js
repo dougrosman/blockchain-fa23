@@ -23,7 +23,7 @@ async function main() {
         let imageURL = await contract.retrieveURL();
 
         $('#myImage').attr('src', `${imageURL}`);
-
+        
     }, 4000)
    
 }
