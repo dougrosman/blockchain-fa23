@@ -39,7 +39,10 @@ async function main() {
     }
 
     // setInterval is a function that allows an action to be repeated consistently. Here, the JavaScript reads from 
+    let counter = 0;
     setInterval(function() {
         setBackgroundColor();
+        console.log("i just checked the contract to see what the color is, and then i set the background to that color " + counter);
+        counter++;
     }, 2000)
 }
